@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrator de Palavras-Chave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Extrator de palavras-chave</h1>
+        <textarea id="entrada-de-texto" placeholder="let jogadores = [ 
+
+        { nome: "Ana", pontos: 42 }, 
+      
+        { nome: "Carlos", pontos: 55 }, 
+      
+        { nome: "Bia", pontos: 38 }, 
+        function mostraPalavrasChave() {
+            const texto = document.querySelector("#entrada-de-texto").value;
+          
+            const campoResultado = document.querySelector("#resultado-palavrachave");
+          
+            const palavrasChave = processaTexto(texto);
+          
+            campoResultado.textContent = palavrasChave.join(", ");
+          }
+      ]; 
+      
+       
+      
+      jogadores.sort(function (a, b) { 
+      
+        return b.pontos - a.pontos; 
+      
+      }); 
+      
+       
+      
+      console.log(jogadores); "></textarea>
+        <button id="botao-palavrachave">Extrair</button>
+        <div id="resultado-palavrachave"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
